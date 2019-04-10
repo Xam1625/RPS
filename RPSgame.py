@@ -1,8 +1,8 @@
 import random
 
-choices = ['ROCK', 'PAPER', 'SCISSORS']					#Need to work out how to randomise comp choice from this list??? - BINGO! Imported random module above... 
-usr_choice = input("Enter ROCK, PAPER, or SCISSORS:\n").upper()		#Asks user but also changes their input to upper case - better for matching statements later...
-com_choice = random.choice(choices)					#Com choice will choose a random entry from 'choices' lists - thanks to the 'Random' module we imported
+choices = ['ROCK', 'PAPER', 'SCISSORS']					
+usr_choice = input("Enter ROCK, PAPER, or SCISSORS:\n").upper()		
+com_choice = random.choice(choices)					
 
 while usr_choice not in choices:
 	print('You made an invalid choice - Please try again!')
